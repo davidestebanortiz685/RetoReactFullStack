@@ -19,7 +19,20 @@ const useCartStore = create(
         }
       },
 
-      removeItem: (id) =>
+      removeItem: (id) => {
+        const item = get().items.find((i) => i.id === id);
+        if (item.quantity === 1) {
+          set({ items: get().items.filter((i) => i.id !== id) });
+        } else {
+          set({
+            items: get().items.map((i) =>
+              i.id === id ? { ...i, quantity: i.quantity - 1 } : i
+            ),
+          });
+        }
+      },
+
+      deleteItem: (id) =>
         set({ items: get().items.filter((i) => i.id !== id) }),
 
       clearCart: () => set({ items: [] }),
