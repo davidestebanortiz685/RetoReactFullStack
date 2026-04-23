@@ -1,0 +1,33 @@
+[33m24c2a58[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m791f8d0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: commit: .
+[33m24c2a58[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2}: commit: Update package.json
+[33m16e45b8[m HEAD@{3}: commit: Actualizando el Vite.config
+[33m562c4f8[m HEAD@{4}: commit: Update Navbar.jsx
+[33mbc31d0f[m HEAD@{5}: commit: Update Navbar.jsx
+[33m683b195[m HEAD@{6}: commit: Update App.jsx
+[33m4bace0f[m HEAD@{7}: commit: Create Register.jsx
+[33m2d45a21[m HEAD@{8}: commit: Create Login.jsx
+[33mc419622[m HEAD@{9}: commit: Creamos la logica para la autenticacion de usuarios
+[33ma7eefab[m HEAD@{10}: commit: Remplazando el Checkout
+[33m94ba58a[m HEAD@{11}: commit: Modificando el carrito
+[33med94ec3[m HEAD@{12}: commit: Añadiendo el Mockdata de categorias
+[33mb22fdc2[m HEAD@{13}: commit: Añadiendo el mockdata de users
+[33ma30ad3a[m HEAD@{14}: commit: Añadiendo el Mockdata de productos
+[33maf4ef69[m HEAD@{15}: commit: Modificando Codigo
+[33me26b946[m HEAD@{16}: commit: Cambiando Nombre del archivo
+[33m3117993[m HEAD@{17}: commit: Create ProductCart.jsx
+[33m22b4fde[m HEAD@{18}: commit: Corrigiendo errores
+[33m0fe4ebe[m HEAD@{19}: commit: Update Navbar.jsx
+[33md3a64e4[m HEAD@{20}: commit: Create Navbar.jsx
+[33ma8f2b96[m HEAD@{21}: commit: Create Checkout.jsx
+[33m5e3578a[m HEAD@{22}: commit: Create Cart.jsx
+[33m49cbd18[m HEAD@{23}: commit: Create Home.jsx
+[33m0e14dae[m HEAD@{24}: commit: Update de app.jsx
+[33mae9f01d[m HEAD@{25}: commit: Reemplazando el contenido de Main.jsx
+[33mf2021a7[m HEAD@{26}: commit: Creacion del archivo de carrito de compra y creacion tambien de diferentes carpetas que se usaran
+[33mf37dde1[m HEAD@{27}: commit: Remplazando el Contenido por 1ra vez del index.css
+[33m6f421c0[m HEAD@{28}: commit: Remplazando el contenido de Config
+[33m9fd062a[m HEAD@{29}: commit: Creacion del Archivo tailwind
+[33m45c26c0[m HEAD@{30}: commit: Usando Comandos de NPM
+[33m36e15de[m HEAD@{31}: commit: Agregando el JSON
+[33m76eab3d[m HEAD@{32}: commit (initial): Iniciando proyecto con react
