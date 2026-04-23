@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import products from "../mockdata/products";
+import products from "../mockdata/products";
 import ProductCard from "../components/molecules/ProductCard";
 import SearchBar from "../components/molecules/SearchBar";
 
