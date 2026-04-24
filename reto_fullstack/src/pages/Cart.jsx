@@ -10,7 +10,7 @@ function Cart() {
         <p className="text-6xl mb-4">🛒</p>
         <h2 className="text-2xl font-bold text-gray-700 mb-2">Tu carrito está vacío</h2>
         <p className="text-gray-400 mb-6">Agrega productos desde la tienda</p>
-        <Link to="/" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+        <Link to="/home" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
           Ver productos
         </Link>
       </div>

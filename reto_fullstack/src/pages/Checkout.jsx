@@ -19,7 +19,7 @@ function Checkout() {
 
   const handleConfirm = () => {
     clearCart();
-    navigate("/");
+    navigate("/home");
     alert("¡Compra realizada con éxito! Gracias por tu pedido 🎉");
   };
 

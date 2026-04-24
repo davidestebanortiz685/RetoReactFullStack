@@ -16,7 +16,7 @@ function Login() {
     }
     const success = login(email, password);
     if (success) {
-      navigate("/");
+      navigate("/home");
     } else {
       setError("Email o contraseña incorrectos");
     }
