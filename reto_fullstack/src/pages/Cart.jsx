@@ -34,7 +34,6 @@ function Cart() {
               <p className="text-blue-600 font-bold">${item.price}</p>
             </div>
 
-            {/* Controles de cantidad */}
             <div className="flex items-center gap-2">
               <button
                 onClick={() => removeItem(item.id)}
@@ -51,12 +50,10 @@ function Cart() {
               </button>
             </div>
 
-            {/* Subtotal */}
             <p className="w-20 text-right font-bold text-gray-800">
               ${(item.price * item.quantity).toFixed(2)}
             </p>
 
-            {/* Eliminar */}
             <button
               onClick={() => deleteItem(item.id)}
               className="text-red-400 hover:text-red-600 transition text-xl ml-2"
@@ -67,7 +64,6 @@ function Cart() {
         ))}
       </div>
 
-      {/* Resumen */}
       <div className="bg-white rounded-xl shadow-sm p-6 flex flex-col gap-4">
         <div className="flex justify-between text-lg">
           <span className="text-gray-600">Total de productos:</span>

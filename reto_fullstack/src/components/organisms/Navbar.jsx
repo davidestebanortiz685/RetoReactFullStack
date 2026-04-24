@@ -14,7 +14,6 @@ function Navbar() {
       <div className="flex justify-between items-center">
         <Link to="/" className="text-xl font-bold">🛍 Mi Tienda</Link>
 
-        {/* Botón hamburguesa para móvil */}
         <button
           className="md:hidden text-white text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -22,7 +21,6 @@ function Navbar() {
           {menuOpen ? "✕" : "☰"}
         </button>
 
-        {/* Menú desktop */}
         <div className="hidden md:flex gap-6 items-center">
           <Link to="/home" className="hover:underline">Productos</Link>
           <Link to="/cart" className="hover:underline">
@@ -39,9 +37,8 @@ function Navbar() {
                 onClick={logout}
                 className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm hover:bg-blue-50 transition"
               >
-              <Link to="/" className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm hover:bg-blue-50 transition">
-              Salir            
-              </Link>
+                            <Link to="/" className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm hover:bg-blue-50 transition">
+Salir            </Link>
               </button>
             </div>
           ) : (
@@ -52,7 +49,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Menú móvil desplegable */}
       {menuOpen && (
         <div className="md:hidden flex flex-col gap-4 mt-4 border-t border-blue-500 pt-4">
           <Link to="/home" onClick={() => setMenuOpen(false)} className="hover:underline">Productos</Link>
@@ -68,11 +64,11 @@ function Navbar() {
               <span className="text-sm">Hola, {currentUser.name}</span>
               <button
                 onClick={() => { logout(); setMenuOpen(false); }}
-                 className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm"
+                className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm"
               >
-              <Link to="/" className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm hover:bg-blue-50 transition">
-              Salir            
-              </Link>              </button>
+                                            <Link to="/" className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm hover:bg-blue-50 transition">
+Salir            </Link>
+              </button>
             </div>
           ) : (
             <Link to="/login" onClick={() => setMenuOpen(false)} className="bg-white text-blue-600 px-3 py-1 rounded-lg text-sm w-fit">

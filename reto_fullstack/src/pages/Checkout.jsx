@@ -28,7 +28,6 @@ function Checkout() {
       <h1 className="text-3xl font-bold text-gray-800 mb-2">✅ Resumen de compra</h1>
       <p className="text-gray-400 mb-6">Revisa tu pedido antes de confirmar</p>
 
-      {/* Lista de productos */}
       <div className="bg-white rounded-xl shadow-sm p-6 mb-4">
         <h2 className="font-semibold text-gray-700 mb-4 text-lg">Productos</h2>
         <div className="flex flex-col gap-3">
@@ -47,7 +46,6 @@ function Checkout() {
         </div>
       </div>
 
-      {/* Resumen de totales */}
       <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
         <h2 className="font-semibold text-gray-700 mb-4 text-lg">Resumen</h2>
         <div className="flex flex-col gap-2 text-sm text-gray-600">
@@ -66,7 +64,6 @@ function Checkout() {
         </div>
       </div>
 
-      {/* Botones */}
       <div className="flex gap-3">
         <Link
           to="/cart"

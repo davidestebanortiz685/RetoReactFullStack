@@ -42,7 +42,6 @@ function Home() {
         </div>
       )}
 
-      {/* Paginación */}
       {totalPages > 1 && (
         <div className="flex justify-center gap-2 mt-8">
           {Array.from({ length: totalPages }, (_, i) => (
