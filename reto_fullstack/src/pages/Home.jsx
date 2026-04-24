@@ -1,13 +1,24 @@
-import { useState } from "react";
-import products from "../mockdata/products";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import ProductCard from "../components/molecules/ProductCard";
 import SearchBar from "../components/molecules/SearchBar";
 
 const ITEMS_PER_PAGE = 6;
 
 function Home() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    axios.get("https://fakestoreapi.com/products")
+      .then((res) => {
+        setProducts(res.data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
 
   const filtered = products.filter((p) =>
     p.title.toLowerCase().includes(search.toLowerCase())
@@ -23,6 +34,14 @@ function Home() {
     setSearch(value);
     setCurrentPage(1);
   };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <p className="text-gray-400 text-lg">Cargando productos...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-8">
